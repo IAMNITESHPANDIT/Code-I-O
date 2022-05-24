@@ -74,7 +74,7 @@ function AboutPage() {
         <p className='lead mb-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum animi eum quas quo, omnis minus.</p>
         <div className="row">
 
-          <div className="col-12 col-md-3 text-center">
+          <div className="col-12 col-md-4 text-center">
             <img src={team1} className="img-fluid img1" alt="Latest News" />
             
             <h4>Nitesh Pandey</h4>
@@ -82,7 +82,7 @@ function AboutPage() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
           </div>
 
-          <div className="col-12 col-md-3 text-center">
+          <div className="col-12 col-md-4 text-center">
             <img src={team2} className="img-fluid img1" alt="Latest News" />
             
             <h4>Nitesh Pandey</h4>
@@ -90,7 +90,7 @@ function AboutPage() {
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
           </div>
 
-          <div className="col-12 col-md-3 text-center">
+          <div className="col-12 col-md-4 text-center">
             <img src={team4} className="img-fluid img1" alt="Latest News" />
             
             <h4>Nitesh Pandey</h4>
@@ -105,7 +105,7 @@ function AboutPage() {
 
         <div className="row">
 
-<div className="col-12 col-md-3 text-center">
+<div className="col-12 col-md-4 text-center">
   <img src={team1} className="img-fluid img1" alt="Latest News" />
   
   <h4>Nitesh Pandey</h4>
@@ -113,7 +113,7 @@ function AboutPage() {
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
 </div>
 
-<div className="col-12 col-md-3 text-center">
+<div className="col-12 col-md-4 text-center">
   <img src={team2} className="img-fluid img1" alt="Latest News" />
   
   <h4>Nitesh Pandey</h4>
@@ -121,7 +121,7 @@ function AboutPage() {
   <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
 </div>
 
-<div className="col-12 col-md-3 text-center">
+<div className="col-12 col-md-4 text-center">
   <img src={team4} className="img-fluid img1" alt="Latest News" />
   
   <h4>Nitesh Pandey</h4>
