@@ -1,6 +1,8 @@
 import { Formik, Form, Field } from "formik";
 import "./Form.Style.scss";
+import swal from 'sweetalert';
 import * as Yup from "yup";
+import {Link} from 'react-router-dom';
 
 const SignupSchema = Yup.object().shape({
   Name: Yup.string()
@@ -39,25 +41,26 @@ const FormComponent = () => {
               <lebel htmlfor="Name">Name: </lebel>
               <Field name="Name" />
               {errors.Name && touched.Name ? (
-                <div className="err">{errors.Name}</div>
+                <span className="text-danger">{errors.Name}</span>
               ) : null}
               <br /> <br />
               <lebel>Email: </lebel>
               <Field name="email" type="email" />
               {errors.email && touched.email ? (
-                <div className="err">{errors.email}</div>
+                <span className="text-danger">{errors.email}</span>
               ) : null}
               <br /> <br />
-              <lebel for="password" >Password: </lebel>
-              <Field name="Password" id="password"  />
+              <lebel for="password">Password: </lebel>
+              <Field name="Password" id="password" type="password" />
               {errors.Password && touched.Password ? (
-                <div className="err">{errors.Password}</div>
+                <span className="text-danger">{errors.Password}</span>
               ) : null}
-
-                <br /> <br />
-                <a href={url}>Forget password</a>
-                <br/> <br/>
-              <button className="btn" type="submit">Submit</button>
+              <br /> <br />
+              <Link to="/passwordReset">Forget password</Link>
+              <br /> <br />
+              <button className="btn btn-primary" type="submit">
+                Submit
+              </button>
             </Form>
           )}
         </Formik>

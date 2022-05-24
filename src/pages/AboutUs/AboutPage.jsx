@@ -1,149 +1,176 @@
-import React from 'react'
-import About from '../../Assest/about.jpg';
-import Mission from '../../Assest/Mission.jpg';
-import News1 from '../../Assest/news1.jpg';
-import News2 from '../../Assest/news2.jpg';
-import team1 from '../../Assest/team1.jpg';
-import team2 from '../../Assest/team2.jpg';
-import team3 from '../../Assest/team3.jpg';
-import team4 from '../../Assest/team4.jpg';
-import team5 from '../../Assest/team5.jpg';
-import team6 from '../../Assest/team6.jpg';
+import React from "react";
+import About from "../../Assest/about.jpg";
+import Mission from "../../Assest/Mission.jpg";
+import News1 from "../../Assest/news1.jpg";
+import News2 from "../../Assest/news2.jpg";
+import Ceo from "../../Assest/ceo.png";
+import team1 from "../../Assest/team1.jpg";
+import team2 from "../../Assest/team2.jpg";
+import team3 from "../../Assest/team3.jpg";
+import team5 from "../../Assest/team5.jpg";
+import team6 from "../../Assest/team6.jpg";
 
-
-import './about.style.css';
+import "./about.style.css";
 function AboutPage() {
   return (
     <div>
       <div className="container">
-        <h2 className='h2 text-strong text-center'>About us</h2>
-          <div className="row mt-4">
-              <div className="col-md-6 col-12">
-                <img src={About} className="img-fluid rounded" alt="About Image"/>
-              </div>
-              <div className="col-md-6 col-12 text-start">
-                <small className='text-warning'>About us</small>
-                <h2 className='h2 text-strong '>Company History</h2>
-                <p className='lead mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis laboriosam beatae animi quidem impedit similique fuga eos commodi illum tempore molestiae voluptatem? Quis libero ipsam culpa facilis similique fugiat inventore. At velit quod esse voluptatem aliquid maiores modi molestias!</p>
+        <h2 className="h2 text-strong text-center">About us</h2>
+        <div className="row mt-4">
+          <div className="col-md-6 col-12">
+            <img src={About} className="img-fluid rounded" alt="About Image" />
+          </div>
+          <div className="col-md-6 col-12 text-start">
+            <small className="text-warning">About us</small>
+            <h2 className="h2 text-strong ">Company History</h2>
+            <p className="lead mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              veritatis laboriosam beatae animi quidem impedit similique fuga
+              eos commodi illum tempore molestiae voluptatem? Quis libero ipsam
+              culpa facilis similique fugiat inventore. At velit quod esse
+              voluptatem aliquid maiores modi molestias!
+            </p>
+          </div>
+        </div>
 
-              </div>
-            </div> 
+        {/* mission and vision of Company  */}
 
-            {/* mission and vision of Company  */}
+        <h2 className="h2 text-strong text-center m-5">Mission & Vision</h2>
+        <div className="row mt-4 ">
+          <div className="col-md-6 col-12 order-md-2 order-1">
+            <img
+              src={Mission}
+              className="img-fluid rounded"
+              alt="About Image"
+            />
+          </div>
+          <div className="col-md-6 col-12 text-start order-md-1 order-2">
+            <small className="text-warning">MISSION & VISSION</small>
 
+            <p className="lead mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              veritatis laboriosam beatae animi quidem impedit similique fuga
+              eos commodi illum tempore molestiae voluptatem? Quis libero ipsam
+              culpa facilis similique fugiat inventore. At velit quod esse
+              voluptatem aliquid maiores modi molestias!
+            </p>
+          </div>
+        </div>
 
-            <h2 className='h2 text-strong text-center m-5'>Mission & Vision</h2>
-          <div className="row mt-4 ">
-              <div className="col-md-6 col-12 order-md-2 order-1">
-                <img src={Mission} className="img-fluid rounded" alt="About Image"/>
-              </div>
-              <div className="col-md-6 col-12 text-start order-md-1 order-2">
-                <small className='text-warning'>MISSION & VISSION</small>
-                
-                <p className='lead mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis laboriosam beatae animi quidem impedit similique fuga eos commodi illum tempore molestiae voluptatem? Quis libero ipsam culpa facilis similique fugiat inventore. At velit quod esse voluptatem aliquid maiores modi molestias!</p>
+        {/* Latest News About Company  */}
 
-              </div>
-            </div> 
+        <h2 className="h2 text-strong text-center m-5">Latest News</h2>
+        <div className="row mt-4">
+          <div className="col-md-6 col-12">
+            <img
+              src={News1}
+              className="img-thumbnail rounded"
+              alt="Latest News"
+            />
+            <img
+              src={News2}
+              className="img-thumbnail mt-3 rounded d-md-none"
+              alt="Latest News"
+            />
+          </div>
+          <div className="col-md-6 col-12 text-start">
+            <small className="text-warning">
+              VIEW ALL BLOG POST
+              <hr className="devider" />
+            </small>
 
-            {/* Latest News About Company  */}
+            <p className="lead mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem,
+              veritatis laboriosam beatae animi quidem impedit similique fuga
+              eos commodi illum tempore molestiae voluptatem? Quis libero ipsam
+              culpa facilis similique fugiat inventore. At velit quod esse
+              voluptatem aliquid maiores modi molestias! Lorem ipsum dolor sit
+              amet consectetur adipisicing elit. Aut temporibus, repudiandae
+              facilis magni doloribus, dolor cumque nisi similique tempora
+              pariatur doloremque quam porro nam alias quidem quo impedit ab id!
+            </p>
+          </div>
+        </div>
 
-          
-        <h2 className='h2 text-strong text-center m-5'>Latest News</h2>
-          <div className="row mt-4">
-              <div className="col-md-6 col-12">
-                <img src={News1} className="img-thumbnail rounded" alt="Latest News"/>
-                <img src={News2} className="img-thumbnail mt-3 rounded d-md-none" alt="Latest News"/>
+        {/* ------Our Team Section goes here----- */}
 
-              </div>
-              <div className="col-md-6 col-12 text-start">
-                <small className='text-warning'>VIEW ALL BLOG POST
-                <hr className='devider'/>
-                </small>
-    
-                <p className='lead mt-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, veritatis laboriosam beatae animi quidem impedit similique fuga eos commodi illum tempore molestiae voluptatem? Quis libero ipsam culpa facilis similique fugiat inventore. At velit quod esse voluptatem aliquid maiores modi molestias!
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut temporibus, repudiandae facilis magni doloribus, dolor cumque nisi similique tempora pariatur doloremque quam porro nam alias quidem quo impedit ab id!
-                </p>
-
-              </div>
-            </div> 
-
-
-            {/* ------Our Team Section goes here----- */}
-
-        <h2 className='h2 text-strong text-center m-5'>Our Team</h2>
-        <p className='lead mb-2'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum animi eum quas quo, omnis minus.</p>
+        <h2 className="h2 text-strong text-center mt-5">Our Team</h2>
+        <p className="lead m-4">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum
+          animi eum quas quo, omnis minus.
+        </p>
         <div className="row">
-
           <div className="col-12 col-md-4 text-center">
-            <img src={team1} className="img-fluid img1" alt="Latest News" />
-            
+            <img src={Ceo} className="img-fluid img1" alt="Latest News" />
+
             <h4>Nitesh Pandey</h4>
             <p>FOUNDER & CEO</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
           </div>
 
           <div className="col-12 col-md-4 text-center">
             <img src={team2} className="img-fluid img1" alt="Latest News" />
-            
-            <h4>Nitesh Pandey</h4>
-            <p>FOUNDER & CEO</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+
+            <h4>Alena</h4>
+            <p>Full-Stack Developer</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
           </div>
 
           <div className="col-12 col-md-4 text-center">
-            <img src={team4} className="img-fluid img1" alt="Latest News" />
-            
-            <h4>Nitesh Pandey</h4>
-            <p>FOUNDER & CEO</p>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+            <img src={team3} className="img-fluid img1" alt="Latest News" />
+
+            <h4>Kaira Adwani</h4>
+            <p>Marketing Specialist</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
           </div>
-
-         
-
-        
         </div>
 
-        <div className="row">
+        <div className="row mb-5">
+          <div className="col-12 col-md-4 text-center">
+            <img src={team1} className="img-fluid img1" alt="Latest News" />
 
-<div className="col-12 col-md-4 text-center">
-  <img src={team1} className="img-fluid img1" alt="Latest News" />
-  
-  <h4>Nitesh Pandey</h4>
-  <p>FOUNDER & CEO</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
-</div>
+            <h4>Jackline Frank</h4>
+            <p>ReactJs Developer</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
+          </div>
 
-<div className="col-12 col-md-4 text-center">
-  <img src={team2} className="img-fluid img1" alt="Latest News" />
-  
-  <h4>Nitesh Pandey</h4>
-  <p>FOUNDER & CEO</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
-</div>
+          <div className="col-12 col-md-4 text-center">
+            <img src={team5} className="img-fluid img1" alt="Latest News" />
 
-<div className="col-12 col-md-4 text-center">
-  <img src={team4} className="img-fluid img1" alt="Latest News" />
-  
-  <h4>Nitesh Pandey</h4>
-  <p>FOUNDER & CEO</p>
-  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
-</div>
+            <h4>Siddhartha </h4>
+            <p>H.R</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
+          </div>
 
+          <div className="col-12 col-md-4 text-center">
+            <img src={team6} className="img-fluid img1" alt="Latest News" />
 
-
-
-</div>
-
-
-
-
-
-
-
-
+            <h4>Gaurav Pandey</h4>
+            <p>Sr. Software Engineer</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+              accusamus nesciunt, aliquam iste quod voluptas.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default AboutPage
+export default AboutPage;

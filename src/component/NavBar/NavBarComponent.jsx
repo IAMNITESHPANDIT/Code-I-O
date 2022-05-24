@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from 'react-router-dom';
+
 
 function NavBarComponent() {
   return (
@@ -6,7 +8,7 @@ function NavBarComponent() {
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
-            Code <span className="text-success">I/O</span> 
+            Code <span className="text-success">I/O</span>
           </a>
           <button
             className="navbar-toggler"
@@ -20,17 +22,17 @@ function NavBarComponent() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav ms-auto" >
-              <a className="nav-link active" aria-current="page" href="#">
+            <div className="navbar-nav ms-auto">
+              <Link className="nav-link active" aria-current="page" to="/">
                 Home
-              </a>
-              <a className="nav-link" href="#">
+              </Link>
+              <Link className="nav-link" to="/contact">
                 Contact Us
-              </a>
-              <a className="nav-link" href="#">
+              </Link>
+              <Link className="nav-link" to="/about">
                 About Us
-              </a>
-             
+              </Link>
+              
             </div>
           </div>
         </div>
