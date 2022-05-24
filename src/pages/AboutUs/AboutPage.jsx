@@ -75,7 +75,7 @@ function AboutPage() {
         <div className="row">
 
           <div className="col-12 col-md-3 text-center">
-            <img src={Ceo} className="img-fluid img1" alt="Latest News" />
+            <img src={team1} className="img-fluid img1" alt="Latest News" />
             
             <h4>Nitesh Pandey</h4>
             <p>FOUNDER & CEO</p>
@@ -83,16 +83,57 @@ function AboutPage() {
           </div>
 
           <div className="col-12 col-md-3 text-center">
-            <img src={Ceo} className="img-fluid img1" alt="Latest News" />
+            <img src={team2} className="img-fluid img1" alt="Latest News" />
             
             <h4>Nitesh Pandey</h4>
             <p>FOUNDER & CEO</p>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
           </div>
 
-          <div className="col-12 col-md-3"></div>
-          <div className="col-12 col-md-3"></div>
+          <div className="col-12 col-md-3 text-center">
+            <img src={team4} className="img-fluid img1" alt="Latest News" />
+            
+            <h4>Nitesh Pandey</h4>
+            <p>FOUNDER & CEO</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+          </div>
+
+         
+
+        
         </div>
+
+        <div className="row">
+
+<div className="col-12 col-md-3 text-center">
+  <img src={team1} className="img-fluid img1" alt="Latest News" />
+  
+  <h4>Nitesh Pandey</h4>
+  <p>FOUNDER & CEO</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+</div>
+
+<div className="col-12 col-md-3 text-center">
+  <img src={team2} className="img-fluid img1" alt="Latest News" />
+  
+  <h4>Nitesh Pandey</h4>
+  <p>FOUNDER & CEO</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+</div>
+
+<div className="col-12 col-md-3 text-center">
+  <img src={team4} className="img-fluid img1" alt="Latest News" />
+  
+  <h4>Nitesh Pandey</h4>
+  <p>FOUNDER & CEO</p>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id accusamus nesciunt, aliquam iste quod voluptas.</p>
+</div>
+
+
+
+
+</div>
+
 
 
 
