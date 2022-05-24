@@ -1,0 +1,33 @@
+.contianer{
+    width: 100hw;
+    text-align: center;
+    display: flex;
+        justify-content: center;
+    &{
+        position: relative;
+        padding: 15px;
+        left: 40%;
+        top: 50%;
+        transform: translate(50px ,50px);
+        width: 350px;
+        min-height: 350px;
+        border-radius: 0.5rem;
+        box-shadow: 8px 8px 24px 0px rgba(66, 68, 90, 1);
+    }
+    .err{
+        color:red;
+    }
+    .btn{
+        padding: 15px;
+        
+    }
+    a{
+        text-decoration: none;
+
+        &:hover{
+            text-decoration: underline;
+            color:blue;
+        }
+    }
+
+}
