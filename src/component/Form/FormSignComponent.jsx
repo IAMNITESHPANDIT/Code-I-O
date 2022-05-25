@@ -38,13 +38,13 @@ const FormSignComponent = () => {
         >
           {({ errors, touched }) => (
             <Form>
-              <lebel>Email: </lebel>
+              <label htmlFor="email">Email: </label>
               <Field name="email" type="email" />
               {errors.email && touched.email ? (
                 <span className="text-danger">{errors.email}</span>
               ) : null}
               <br /> <br />
-              <lebel for="password">Password: </lebel>
+              <label htmlFor="password">Password: </label>
               <Field name="Password" id="password" type="password" />
               {errors.Password && touched.Password ? (
                 <span className="text-danger">{errors.Password}</span>

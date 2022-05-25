@@ -7,9 +7,9 @@ function NavBarComponent() {
     <div>
       <nav className="navbar navbar-expand-lg bg-light">
         <div className="container-fluid">
-          <a className="navbar-brand" href="#">
+          <Link className="navbar-brand" to="/">
             Code <span className="text-success">I/O</span>
-          </a>
+          </Link>
           <button
             className="navbar-toggler"
             type="button"

@@ -3,20 +3,20 @@ import './Contact.style.css'
 function ContactusComponent() {
   return (
     <div className="contactus m-5">
-      <div class="card card-outline-secondary">
-        <div class="card-header">
-          <h3 class="mb-0">Contact</h3>
+      <div className="card card-outline-secondary">
+        <div className="card-header">
+          <h3 className="mb-0">Contact</h3>
         </div>
-        <div class="card-body">
-          <form autocomplete="off" class="form" role="form">
+        <div className="card-body">
+          <form autoComplete="off" className="form" role="form">
             <fieldset>
-              <label class="mb-0 h5 " for="name2">
+              <label className="mb-0 h5 " htmlFor="name2">
                 Name
               </label>
-              <div class="row mb-1">
-                <div class="col-lg-12">
+              <div className="row mb-1">
+                <div className="col-lg-12">
                   <input
-                    class="form-control"
+                    className="form-control"
                     id="name2"
                     name="name2"
                     required=""
@@ -24,13 +24,13 @@ function ContactusComponent() {
                   />
                 </div>
               </div>
-              <label class="mb-0 h5" for="email2">
+              <label className="mb-0 h5" htmlFor="email2">
                 Email
               </label>
-              <div class="row mb-1">
-                <div class="col-lg-12">
+              <div className="row mb-1">
+                <div className="col-lg-12">
                   <input
-                    class="form-control"
+                    className="form-control"
                     id="email2"
                     name="email2"
                     required=""
@@ -38,13 +38,13 @@ function ContactusComponent() {
                   />
                 </div>
               </div>
-              <label class="mb-0 h5" for="message2">
+              <label className="mb-0 h5" htmlFor="message2">
                 Message
               </label>
-              <div class="row mb-1">
-                <div class="col-lg-12">
+              <div className="row mb-1">
+                <div className="col-lg-12">
                   <textarea
-                    class="form-control"
+                    className="form-control"
                     id="message2"
                     name="message2"
                     required=""
@@ -53,7 +53,7 @@ function ContactusComponent() {
                 </div>
               </div>
               <button
-                class="btn btn-secondary btn-lg float-right"
+                className="btn btn-secondary btn-lg float-right"
                 type="submit"
               >
                 Send Message

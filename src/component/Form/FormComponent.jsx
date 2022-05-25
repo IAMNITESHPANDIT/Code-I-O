@@ -1,8 +1,8 @@
-import { Formik, Form, Field } from "formik";
+import {Formik, Field} from "formik";
 import "./Form.Style.scss";
-import swal from 'sweetalert';
 import * as Yup from "yup";
-import {Link} from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { useFormik } from "formik";
 
 const SignupSchema = Yup.object().shape({
   Name: Yup.string()
@@ -17,56 +17,81 @@ const SignupSchema = Yup.object().shape({
 });
 
 const FormComponent = () => {
-   const url = '';
-  const onsubmit = (e) => {
-    e.preventDefault();
-  };
+  
+  const formik = useFormik({
+    initialValues: {
+      name: "",
+      password: "",
+      email: "",
+    },
+    onSubmit: (values) => {
+      alert(JSON.stringify(values, null, 2));
+    },
+  });
+
+  
   return (
     <div className="contianer">
       <div className="sub_contianer">
         <h1>Signup</h1>
         <Formik
           initialValues={{
-            Name: "",
-            Password: "",
+            name: "",
+            password: "",
             email: "",
           }}
           validationSchema={SignupSchema}
-          onSubmit={(values) => {
-            console.log(values);
-          }}
+          
         >
           {({ errors, touched }) => (
-            <Form>
-              <lebel htmlfor="Name">Name: </lebel>
-              <Field name="Name" />
-              {errors.Name && touched.Name ? (
-                <span className="text-danger">{errors.Name}</span>
+            <form onSubmit={formik.handleSubmit}>
+              <label htmlFor="name">Name: </label>
+              <Field 
+                type="text"
+                name="name" 
+                id="name" 
+                onChange={(e)=>formik.handleChange(e)}
+                value={formik.values.name}
+                />
+              {errors.name && touched.name ? (
+                <span className="text-danger">{errors.name}</span>
               ) : null}
               <br /> <br />
-              <lebel>Email: </lebel>
-              <Field name="email" type="email" />
+              <label htmlFor="email">Email: </label>
+              <Field
+                type="text"
+                name="email" 
+                id="email" 
+                onChange={(e)=>formik.handleChange(e)}
+                value={formik.values.email}
+              />
               {errors.email && touched.email ? (
                 <span className="text-danger">{errors.email}</span>
               ) : null}
               <br /> <br />
-              <lebel for="password">Password: </lebel>
-              <Field name="Password" id="password" type="password" />
-              {errors.Password && touched.Password ? (
-                <span className="text-danger">{errors.Password}</span>
+              <label htmlFor="password">Password: </label>
+              <Field
+                id="password"
+                type="password"
+                onChange={(e)=>formik.handleChange(e)}
+                value={formik.values.password}
+              />
+              {errors.password && touched.password ? (
+                <span className="text-danger">{errors.password}</span>
               ) : null}
               <br /> <br />
-              <br /> 
-              <p>Already Have An Account ?
-                <Link  to="/formsign"> Click Here</Link>
+              <br />
+              <p>
+                Already Have An Account ?<Link to="/formsign"> Click Here</Link>
               </p>
               <button className="btn btn-primary" type="submit">
                 Submit
               </button>
-            </Form>
+            </form>
           )}
         </Formik>
       </div>
+      
     </div>
   );
 };
