@@ -16,7 +16,7 @@ const SignupSchema = Yup.object().shape({
   email: Yup.string().email("Invalid email").required("Required"),
 });
 
-const FormComponent = () => {
+const FormSignComponent = () => {
    const url = '';
   const onsubmit = (e) => {
     e.preventDefault();
@@ -24,7 +24,7 @@ const FormComponent = () => {
   return (
     <div className="contianer">
       <div className="sub_contianer">
-        <h1>Signup</h1>
+        <h1>Sign-in</h1>
         <Formik
           initialValues={{
             Name: "",
@@ -38,12 +38,6 @@ const FormComponent = () => {
         >
           {({ errors, touched }) => (
             <Form>
-              <lebel htmlfor="Name">Name: </lebel>
-              <Field name="Name" />
-              {errors.Name && touched.Name ? (
-                <span className="text-danger">{errors.Name}</span>
-              ) : null}
-              <br /> <br />
               <lebel>Email: </lebel>
               <Field name="email" type="email" />
               {errors.email && touched.email ? (
@@ -56,10 +50,8 @@ const FormComponent = () => {
                 <span className="text-danger">{errors.Password}</span>
               ) : null}
               <br /> <br />
-              <br /> 
-              <p>Already Have An Account ?
-                <Link  to="/formsign"> Click Here</Link>
-              </p>
+              <Link to="/passwordReset">Forget password</Link>
+              <br /> <br />
               <button className="btn btn-primary" type="submit">
                 Submit
               </button>
@@ -71,4 +63,4 @@ const FormComponent = () => {
   );
 };
 
-export default FormComponent;
+export default FormSignComponent;

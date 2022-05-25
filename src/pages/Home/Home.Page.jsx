@@ -11,7 +11,7 @@ function HomePage() {
                  sit optio harum quos, dignissimos perferendis vitae itaque obcaecati beatae fugiat, odit iste deserunt ducimus. Alias similique enim soluta explicabo! Corporis voluptates incidunt ad magnam, nam voluptas, neque asperiores accusamus numquam totam, maxime alias voluptatem ex optio provident error labore? Mollitia.
                     </p>
                     <Link to='/form' className='btn btn-outline-primary me-4'>Register Now!</Link>
-                    <Link to='/form' className='btn btn-outline-success '>Login Now!</Link>
+                    <Link to='/formsign' className='btn btn-outline-success '>Login Now!</Link>
               </div>
               <div className='col-12 col-md-6 p-4 mb-5 d-none d-md-block mt-5'>
               <img className="img-fluid " alt="Coding logo" src={Diamond}/>

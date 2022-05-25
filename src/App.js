@@ -10,8 +10,10 @@ import FooterComponent from './component/Footer/Footer.Component';
 import AboutPage from './pages/AboutUs/AboutPage';
 import ContactusComponent from './pages/ContactUs/ContactusComponent';
 import ErrorPage from './pages/Error/ErrorPage';
-import formComponent from './component/Form/FormComponent';
+// import formComponent from './component/Form/FormComponent';
 import FormComponent from './component/Form/FormComponent';
+import FormSignComponent from './component/Form/FormSignComponent';
+
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
         <Route path="/contact" element={<ContactusComponent />} />
         <Route path="/about" element={<AboutPage />} />
         <Route path="/form" element={<FormComponent />} />
+        <Route path="/formsign" element={<FormSignComponent />} />
         <Route path="/passwordReset" element={<PasswordReset />} />
         <Route path="*" element={<ErrorPage/>} />
       </Routes>
