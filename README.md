@@ -1,71 +1,56 @@
-# Getting Started with Create React App
+Code-I-O is a front-end template for building fast, robust, and adaptable web apps or sites.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+It does not impose a specific development philosophy or framework, so you're free to architect your code in the way that you want.
 
-## Available Scripts
+Homepage: https://iamniteshpandit.github.io/Code-I-O/
+Source: https://github.com/IAMNITESHPANDIT/Code-I-O
+Twitter: @iamniteshpandit
+Quick start
+Choose one of the following options:
 
-In the project directory, you can run:
+Download the latest stable release from (https://iamniteshpandit.github.io/Code-I-O//).
 
-### `npm start`
+mkdir  Code-I-O
+unzip Code-I-O
+Clone the git repo — git clone https://github.com/IAMNITESHPANDIT/Code-I-O.git - and checkout the tagged release you'd like to use. The dist folder represents the latest version of the project for end users.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Install with npm: npm install html5-boilerplate or yarn: yarn add html5-boilerplate. The resulting node_modules/html5-boilerplate/dist folder represents the latest version of the project for end users. Depending on what you want to use and how you want to use it, you may have to copy and paste the contents of that folder into your project directory.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Using our new (https://github.com/IAMNITESHPANDIT/Code-I-O.git) project, instantly fetch the latest npm published package (or any version available on npm) with npx, npm init or yarn create without having to install any dependencies. Running the following npx command installs the latest version into a folder called new-site
 
-### `npm test`
+npx create-Code-I-O new-website
+cd new-website
+npm install
+npm start
+Features
+Designed with progressive enhancement in mind.
+Includes:
+Apache Server Configs that improve the web site's performance and security
+Placeholder Open Graph elements and attributes.
+An example package.json file with Parcel commands built in to jumpstart application development
+Placeholder CSS Media Queries.
+Useful CSS helper classes.
+Default print styles, performance optimized.
+Protection against any stray console statements causing JavaScript errors in older browsers.
+"Delete-key friendly." Easy to strip out parts you don't need.
+Extensive documentation.
+Browser support
+You can find our range of supported browsers in our package.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+Documentation
+Take a look at the documentation table of contents. This documentation is bundled with the project which makes it available for offline reading and provides a useful starting point for any documentation you want to write about your project.
 
-### `npm run build`
+Contributing
+Hundreds of developers have helped to make the HTML5 Boilerplate. Anyone is welcome to contribute, however, if you decide to get involved, please take a moment to review the guidelines:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-# task-application
+Bug reports
+Feature requests
+Pull requests
+Check this website
+https://iamniteshpandit.github.io/Code-I-O/
