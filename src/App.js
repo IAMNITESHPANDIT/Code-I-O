@@ -1,5 +1,5 @@
 
-
+import './App.css';
 // import FormComponent from './component/Form/FormComponent';
 import NavBarComponent from './component/NavBar/NavBarComponent';
 // import StateFullComponent from './component/State/StateFull.Component';
