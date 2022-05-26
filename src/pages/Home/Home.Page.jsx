@@ -13,7 +13,7 @@ function HomePage() {
                     <Link to='/form' className='btn btn-outline-primary me-4'>Register Now!</Link>
                     <Link to='/formsign' className='btn btn-outline-success '>Login Now!</Link>
               </div>
-              <div className='col-12 col-md-6 p-4 mb-5 d-none d-md-block mt-5'>
+              <div className='col-12 col-md-6 p-4 mb-5 d-md-block mt-5'>
               <img className="img-fluid " alt="Coding logo" src={Diamond}/>
               </div>
 

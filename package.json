@@ -1,6 +1,5 @@
 {
   "name": "task-application",
-  "homepage": "https://iamniteshpandit.github.io/task-application/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
