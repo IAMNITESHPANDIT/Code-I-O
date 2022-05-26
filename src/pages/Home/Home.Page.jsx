@@ -10,6 +10,7 @@ function HomePage() {
                     <p className='text-start'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit voluptatum delectus quibusdam aut iusto. Iure ad commodi laboriosam eius fugiat quo nemo. Fugiat quaerat ipsam accusantium dolorem deleniti praesentium voluptas quae enim repudiandae, quam quidem tenetur maxime, eos sit! Enim.
                  sit optio harum quos, dignissimos perferendis vitae itaque obcaecati beatae fugiat, odit iste deserunt ducimus. Alias similique enim soluta explicabo! Corporis voluptates incidunt ad magnam, nam voluptas, neque asperiores accusamus numquam totam, maxime alias voluptatem ex optio provident error labore? Mollitia.
                     </p>
+                   
                     <Link to='/form' className='btn btn-outline-primary me-4'>Register Now!</Link>
                     <Link to='/formsign' className='btn btn-outline-success '>Login Now!</Link>
               </div>
