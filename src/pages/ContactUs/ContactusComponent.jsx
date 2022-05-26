@@ -1,5 +1,5 @@
 import React from "react";
-import './Contact.style.css'
+
 function ContactusComponent() {
   return (
     <div className="contactus m-5">
