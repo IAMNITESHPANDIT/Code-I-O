@@ -4,7 +4,7 @@ function ContactusComponent() {
   return (
     <div className="contactus m-5">
       <div className="card card-outline-secondary">
-        <div className="card-header">
+      <div className="card-header">
           <h3 className="mb-0">Contact</h3>
         </div>
         <div className="card-body">
@@ -61,7 +61,8 @@ function ContactusComponent() {
             </fieldset>
           </form>
         </div>
-      </div>
+      
+        </div>
     </div>
   );
 }
