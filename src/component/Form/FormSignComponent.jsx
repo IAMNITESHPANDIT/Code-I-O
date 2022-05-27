@@ -38,18 +38,33 @@ const FormSignComponent = () => {
         >
           {({ errors, touched }) => (
             <Form>
-              <label htmlFor="email">Email: </label>
-              <Field name="email" type="email" />
+
+              <div className="row">
+                <div className="col-4">
+                  {/** label Field over Here */}
+                  <label style={{margin:'5px'}} htmlFor="email">Email: </label>
+                  <br/>
+                  <br/>
+              <label  htmlFor="password">Password: </label>
+
+                </div>
+                <div className="col-8">
+                  {/** input Field over Here */}
+                  <Field  name="email" type="email" />
               {errors.email && touched.email ? (
                 <span className="text-danger">{errors.email}</span>
               ) : null}
               <br /> <br />
-              <label htmlFor="password">Password: </label>
               <Field name="Password" id="password" type="password" />
               {errors.Password && touched.Password ? (
                 <span className="text-danger">{errors.Password}</span>
               ) : null}
               <br /> <br />
+                </div>
+              </div>
+              
+             
+             
               <Link to="/passwordReset">Forget password</Link>
               <br /> <br />
               <button className="btn btn-primary" type="submit">

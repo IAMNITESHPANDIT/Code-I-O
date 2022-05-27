@@ -45,19 +45,33 @@ const FormComponent = () => {
         >
           {({ errors, touched }) => (
             <form onSubmit={formik.handleSubmit}>
-              <label htmlFor="name">Name: </label>
-              <Field 
+              <div className="row">
+                <div className="col-4">
+                  {/** this is for label */}
+                  <label style={{margin:'5px'}} htmlFor="name">Name: </label>
+                  <br/>
+                  <br/>
+                  <label htmlFor="email">Email: </label>
+                  <br/>
+                  <br/>
+                  <label style={{margin:'5px'}} htmlFor="password">Password: </label>
+
+
+                </div>
+                <div className="col-8">
+                  {/* this is for  input field  */}
+                  <Field 
                 type="text"
                 name="name" 
                 id="name" 
                 onChange={(e)=>formik.handleChange(e)}
                 value={formik.values.name}
+              
                 />
               {errors.name && touched.name ? (
                 <span className="text-danger">{errors.name}</span>
               ) : null}
               <br /> <br />
-              <label htmlFor="email">Email: </label>
               <Field
                 type="text"
                 name="email" 
@@ -69,7 +83,6 @@ const FormComponent = () => {
                 <span className="text-danger">{errors.email}</span>
               ) : null}
               <br /> <br />
-              <label htmlFor="password">Password: </label>
               <Field
                 id="password"
                 type="password"
@@ -79,8 +92,9 @@ const FormComponent = () => {
               {errors.password && touched.password ? (
                 <span className="text-danger">{errors.password}</span>
               ) : null}
-              <br /> <br />
-              <br />
+              <br /> <br /><br />
+                </div>
+              </div>
               <p>
                 Already Have An Account ?<Link to="/formsign"> Click Here</Link>
               </p>
